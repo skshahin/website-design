@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+/* nav_bar start here */
+
+img{
+    width: 100px;
+}
+.nav_bar{
+    text-align: center;
+    background: orchid;
+    padding: 1% 7%;
+}
+.nav_bar::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+.nav_title h1{
+    font-size: 2.1rem;
+    color: white;
+    
+}
+.nav_menu{
+   display: flex;
+   flex-direction: column;
+   
+   text-transform: uppercase;
+
+}
+.nav_menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: darkmagenta;
+    margin: 2px;
+    border-radius: 10px;
+
+}
+.nav_menu a:hover{
+    background: rgb(41, 0, 41);
+    transition: 0.5s;
+}
+
+/* nav_bar ends here */
+
+
+/* profile start here */
+
+.profile{
+    text-align: center;
+    position: relative;
+    padding: 130px 10px;
+}
+.profile .first_weather{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: transform 2s;
+    
+}
+.profile .first_weather:hover{
+    transform: rotate(360deg);
+}
+
+.para{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.para p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.profile .last_weather{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    transition: transform 2s;
+}
+.profile .last_weather:hover{
+    transform: rotate(360deg);
+}
+
+/* profile ends here */
+
+  /* aboutme start here */
+
+.aboutme{
+    background:orchid;
+    text-align: center;
+    padding: 1% 7%;
+    
+
+}
+h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.aboutme p{
+    color: white;
+    font-weight: 1rem;
+}
+.aboutme-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 170px;
+    
+}
+.aboutme::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+.dotted-hr{
+    border: dotted 5px;
+    color: white;
+    border-bottom: none;
+    width: 100px;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    background: darkblue;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+ /* aboutme start here */
+
+
+ /* card start here */
+
+
+ .card{
+     background: darkslategray;
+     text-align: center;
+     box-sizing: border-box;
+     
+     padding: 20px;
+     height: 700px;
+ }
+ .card_title h2{
+     background: rgb(19, 36, 36);
+ }
+ .card_desc li{
+     text-align: left;
+     color: lightgray;
+     margin: 10px;
+     padding: 10px;
+ }
+ 
+ .card_icon img{
+     border: 5px solid white;
+     border-radius: 50%;
+     padding: 10px;
+ }
+ .card:hover{
+     box-shadow: 0 4px 8px black;
+ }
+ .professinal_experians::after{
+     content: " ";
+     clear: both;
+     display:table;
+ }
+
+
+
+
+
+.card_desc{
+    padding-right: 20px;
+    
+}
+ .skill_details li{
+    list-style-type: none;
+    position: relative;
+    text-transform: uppercase;
+    
+ }
+ 
+
+ .skill_details li::before{
+    content: " ";
+    clear: both;
+    position: absolute;
+    top:calc(100% + 5px);
+    left: 0px;
+    background: #273c75;
+    width: 100%;
+    height: 10px;
+    border-radius: 1000px;
+ }
+
+ .skill_details li::after{
+    content: " ";
+    position: absolute;
+    top:calc(100% + 6px);
+    left: 0;
+    background: #273c75;
+    width: 0%;
+    height: 10px;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+ }
+ .skill_details li.html::after{
+    animation-name: html;
+ }
+ @keyframes html{
+     to{
+         width: 90%;
+         background:#416de6 ;
+     }
+ }
+
+ .professinal_experians::after{
+     display: table;
+     clear: both;
+     content: " ";
+ }
+
+
+ .skill_details li.css::after{
+    animation-name: css;
+ }
+ @keyframes css{
+     to{
+         width: 80%;
+         background:#416de6 ;
+     }
+ }
+ 
+
+ .skill_details li.java::after{
+    animation-name: java;
+ }
+ @keyframes java{
+     to{
+         width: 50%;
+         background:#416de6 ;
+     }
+ }
+
+ .skill_details li.bootstrap::after{
+    animation-name: bootstrap;
+ }
+ @keyframes bootstrap{
+     to{
+         width: 70%;
+         background:#416de6 ;
+     }
+ }
+
+
+ .skill_details li.jquery::after{
+    animation-name: jquery;
+ }
+
+ @keyframes jquery{
+     to{
+         width: 70%;
+         background:#416de6;
+     }
+ }
+
+ .skill_details li.Responsivedesig::after{
+    animation-name: Responsivedesig;
+ }
+ @keyframes Responsivedesig{
+     to{
+         width: 80%;
+         background:#416de6 ;
+     }
+ }
+
+ .skill_details li.python::after{
+    animation-name: python;
+ }
+ @keyframes python{
+     to{
+         width: 50%;
+         background:#416de6 ;
+     }
+ }
+
+ .skill_details li.nodejs::after{
+    animation-name: nodejs;
+ }
+ @keyframes nodejs{
+     to{
+         width: 60%;
+         background:#416de6 ;
+     }
+ }
+
+ .skill_details li.php::after{
+    animation-name: php;
+ }
+ @keyframes php{
+     to{
+         width: 80%;
+         background:#416de6 ;
+     }
+ }
+
+ 
+ /* card start here */
+
+
+/* achivement start here */
+
+.achievement{
+    padding: 1% 7%;
+    background: darkslategray;
+}
+
+.achievemen_contant h2{
+    text-align: center;
+}
+.achievemen_contant p{
+    color: white;
+    font-weight: bold;
+}
+
+
+form{
+    text-align: center;
+    border: none;
+    padding: 3%;
+
+    
+}
+input,textarea{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    resize: none;
+}
+
+.achievement::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.more_contact h2{
+    text-align: center;
+}
+
+
+
+.media_icon button{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0px 2px;
+    border-radius: 30%;
+  
+}
+
+
+/* achivement ends here */
+
+
+/* footer start  here*/
+.footer{
+    background: black;
+}
+.footer::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.footer_manu a{
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+.footer_manu a:hover{
+ color: gray;
+}
+
+.footer_content{
+    color: white;
+}
+
+
+
+
+/* footer ends  here*/

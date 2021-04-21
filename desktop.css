@@ -1,0 +1,128 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/* nav_bar start here */
+
+.nav_logo{
+    text-align: left;
+} 
+
+.nav_title h1{
+    text-align: right;
+}
+
+.nav_menu{
+   flex-direction: row;
+   justify-content: flex-end;
+   
+}
+.nav_menu a{
+    padding: 2px 10px;
+    margin: 25px 0;
+    background-color: transparent;
+    
+}
+.nav_menu a:hover{
+    background-color: rgb(92, 1, 92);
+    transition: 0.5s;
+
+}
+
+/* nav_bar ends here */
+
+
+
+/* profile start here */
+
+.profile .first_weather{
+    
+    top: 40px;
+    right: 70px;
+    transition: width 2s transform 2s;
+    transition: 2s;
+}
+.profile .first_weather:hover{
+    transform: rotate(360deg);
+    width: 135px;
+}
+
+.profile .last_weather{
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    transition: widht 2s transform 2s;
+    transition: 2s;
+}
+.profile .last_weather:hover{
+    transform: rotate(360deg);
+    width: 135px;
+}
+
+/* profile ends here */
+
+/* about me section starts here */
+
+.aboutme-image{
+    margin-top: 100px;
+}
+
+
+.aboutme-desc p{
+    text-align: left;
+}
+
+
+/* about me section ends here */
+
+
+/* card sectin satart here */
+
+.card{
+    height: 800px;
+}
+/* card sectin ends here */
+
+
+/* achivement start here */
+.contact_link{
+   position: relative;
+}
+.media_icon{
+    position: absolute;
+    margin-top: 200px;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.media_icon button{
+    margin: 2px;
+}
+
+/* achivement ends here */
+
+/* footer start here */
+.footer{
+    height: 100px;
+
+}
+.footer_manu a{
+    display: inline;
+}
+
+
+/* footer start here */
